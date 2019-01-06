@@ -36,13 +36,13 @@ extension Array where Element:Card
 {
     func findCardIndex(toFind: Card) -> Int?
     {
-        return self.indexOf({ $0 == toFind })
+        return self.firstIndex(where: { $0 == toFind })
     }
     
     mutating func removeCard(toRemove: Card) -> Bool
     {
-        guard let i = findCardIndex(toRemove) else { return false }
-        self.removeAtIndex(i)
+        guard let i = findCardIndex(toFind: toRemove) else { return false }
+        self.remove(at: i)
         return true
     }
 }

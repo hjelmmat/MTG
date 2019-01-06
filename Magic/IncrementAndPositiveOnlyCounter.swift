@@ -8,7 +8,7 @@ class IncrementAndPositiveOnlyCounter: PositiveOnlyCounter
     override func changeTotal(by amount: Int) -> Bool
     {
         guard let restrictedAmount = NonNegativeInteger(fromInt: amount) else { return false}
-        super.changeTotal(by: restrictedAmount.value)
-        return true
+        return super.changeTotal(by: restrictedAmount.value)
+        
     }
 }

@@ -8,7 +8,7 @@ struct CardTransferBetweenCardLists
     func moveCardFromOneListToAnother(card name: String, initialList: CardList, finalList: CardList) -> Bool
     {
         let card = MagicCard(named: name)
-        if initialList.list.removeCard(card)
+        if initialList.list.removeCard(toRemove: card)
         {
             finalList.list.append(card)
             return true

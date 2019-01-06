@@ -14,7 +14,7 @@ func ==(lhs: [MagicCard], rhs: [MagicCard]) -> Bool
 {
     if lhs.count == rhs.count
     {
-        for (index, value) in lhs.enumerate()
+        for (index, value) in lhs.enumerated()
         {
             if value != rhs[index]
             {

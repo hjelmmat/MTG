@@ -41,7 +41,7 @@ struct ZoneManager
     
     init(from deck: Deck)
     {
-        let currentCardList = deck.cards.list
+        var currentCardList = deck.cards.list
         currentCardList.shuffle()
         let numCards = currentCardList.count
         if (numCards < 8)

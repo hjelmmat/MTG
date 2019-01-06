@@ -35,7 +35,6 @@
 		F3CEDA3521C0980B00D678F7 /* SpellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CEDA3421C0980B00D678F7 /* SpellProtocol.swift */; };
 		F3CEDA3B21C0A22C00D678F7 /* PermenantProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CEDA3A21C0A22C00D678F7 /* PermenantProtocol.swift */; };
 		F3CEDA3D21C0A25C00D678F7 /* Instant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CEDA3C21C0A25C00D678F7 /* Instant.swift */; };
-		F3CEDA3F21C2128300D678F7 /* Casting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CEDA3E21C2128300D678F7 /* Casting.swift */; };
 		F3CEDA4721C21C6C00D678F7 /* Socery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CEDA4621C21C6C00D678F7 /* Socery.swift */; };
 		F3E36F4B21BE4103003567DF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E36F4A21BE4103003567DF /* Player.swift */; };
 		F3E36F4D21BE427F003567DF /* LifeTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E36F4C21BE427F003567DF /* LifeTotal.swift */; };
@@ -95,7 +94,6 @@
 		F3CEDA3421C0980B00D678F7 /* SpellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellProtocol.swift; sourceTree = "<group>"; };
 		F3CEDA3A21C0A22C00D678F7 /* PermenantProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermenantProtocol.swift; sourceTree = "<group>"; };
 		F3CEDA3C21C0A25C00D678F7 /* Instant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instant.swift; sourceTree = "<group>"; };
-		F3CEDA3E21C2128300D678F7 /* Casting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Casting.swift; sourceTree = "<group>"; };
 		F3CEDA4621C21C6C00D678F7 /* Socery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socery.swift; sourceTree = "<group>"; };
 		F3E36F4A21BE4103003567DF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F3E36F4C21BE427F003567DF /* LifeTotal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeTotal.swift; sourceTree = "<group>"; };
@@ -277,7 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				F3CEDA3421C0980B00D678F7 /* SpellProtocol.swift */,
-				F3CEDA3E21C2128300D678F7 /* Casting.swift */,
 				F3CEDA4021C2128A00D678F7 /* Instant */,
 				F3CEDA4521C21C4400D678F7 /* Sorcery */,
 			);
@@ -466,15 +463,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Matthew Hjelm";
 				TargetAttributes = {
 					F32B07CD21D064B300974894 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Self;
 						TestTargetID = F3E4AB961D10D4B1004AAB8B;
 					};
 					F3E4AB961D10D4B1004AAB8B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Self;
 					};
 				};
 			};
@@ -554,7 +553,6 @@
 				F32511171D6522D200F3E5A6 /* Deck.swift in Sources */,
 				F3CEDA3521C0980B00D678F7 /* SpellProtocol.swift in Sources */,
 				F32B080821D5AED500974894 /* ZoneManager.swift in Sources */,
-				F3CEDA3F21C2128300D678F7 /* Casting.swift in Sources */,
 				F32B07E721D41A3500974894 /* GreaterThanZeroInteger.swift in Sources */,
 				F3E4ABB71D1B55FB004AAB8B /* Lands.swift in Sources */,
 				F3E36F4F21BF6811003567DF /* CounterProtocol.swift in Sources */,
@@ -637,18 +635,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Self;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -670,6 +679,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -683,18 +693,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Self;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -708,6 +729,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

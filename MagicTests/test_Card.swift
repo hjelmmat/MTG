@@ -29,25 +29,26 @@ class test_Card: XCTestCase
     func test_CardShouldBeFoundWhenMethodIsCalled()
     {
         let list = [secondCard, cardOne]
-        assert(list.findCardIndex(cardOne) == 1)
+        assert(list.findCardIndex(toFind: cardOne) == 1)
     }
     
     func test_MethodShouldReturnNilWhenCardIsNotFound()
     {
         let list = [secondCard]
-        assert(list.findCardIndex(cardOne) == nil)
+        assert(list.findCardIndex(toFind: cardOne) == nil)
     }
     
     func test_CardShouldBeReomvedWhenMethodIsCalled()
     {
         var list = [cardOne, secondCard]
-        list.removeCard(cardOne)
-        assert(list == [secondCard])
+        // test shouldn't fail here, meant to remove build warnings
+        let isok = list.removeCard(toRemove: cardOne)
+        assert(isok && list == [secondCard])
     }
     
     func test_RemovingCardShouldReturnFalseWhenCardIsNotFound()
     {
         var list = [cardOne]
-        assert(list.removeCard(secondCard) == false)
+        assert(list.removeCard(toRemove: secondCard) == false)
     }
 }
