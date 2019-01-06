@@ -11,7 +11,6 @@ import XCTest
 
 class test_ZoneManager: XCTestCase
 {
-
     let card     = MagicCard(named: "test")
     let newCard = MagicCard(named: "notTest")
     var cardList : CardList!

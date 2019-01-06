@@ -9,7 +9,6 @@ struct LifeTotal: Counter
     {
         counter.changeTotal(by: amount)
         return true
-
     }
     
     mutating func setCounter(to value: Int)

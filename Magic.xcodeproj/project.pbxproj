@@ -23,7 +23,6 @@
 		F32B080321D5982D00974894 /* MagicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B080221D5982D00974894 /* MagicCard.swift */; };
 		F32B080621D5ADF300974894 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B080521D5ADF300974894 /* GameManager.swift */; };
 		F32B080821D5AED500974894 /* ZoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B080721D5AED500974894 /* ZoneManager.swift */; };
-		F32B080D21D6CCBF00974894 /* Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B080C21D6CCBF00974894 /* Shuffle.swift */; };
 		F32B081121D983C900974894 /* test_GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B081021D983C900974894 /* test_GameManager.swift */; };
 		F32B081321D986F200974894 /* test_ZoneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B081221D986F200974894 /* test_ZoneManager.swift */; };
 		F32B081521D989E000974894 /* test_CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32B081421D989E000974894 /* test_CardList.swift */; };
@@ -84,7 +83,6 @@
 		F32B080221D5982D00974894 /* MagicCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicCard.swift; sourceTree = "<group>"; };
 		F32B080521D5ADF300974894 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 		F32B080721D5AED500974894 /* ZoneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoneManager.swift; sourceTree = "<group>"; };
-		F32B080C21D6CCBF00974894 /* Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shuffle.swift; sourceTree = "<group>"; };
 		F32B081021D983C900974894 /* test_GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_GameManager.swift; sourceTree = "<group>"; };
 		F32B081221D986F200974894 /* test_ZoneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_ZoneManager.swift; sourceTree = "<group>"; };
 		F32B081421D989E000974894 /* test_CardList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test_CardList.swift; sourceTree = "<group>"; };
@@ -100,7 +98,7 @@
 		F3CEDA3E21C2128300D678F7 /* Casting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Casting.swift; sourceTree = "<group>"; };
 		F3CEDA4621C21C6C00D678F7 /* Socery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socery.swift; sourceTree = "<group>"; };
 		F3E36F4A21BE4103003567DF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		F3E36F4C21BE427F003567DF /* LifeTotal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LifeTotal.swift; path = ../LifeTotal.swift; sourceTree = "<group>"; };
+		F3E36F4C21BE427F003567DF /* LifeTotal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifeTotal.swift; sourceTree = "<group>"; };
 		F3E36F4E21BF6811003567DF /* CounterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterProtocol.swift; sourceTree = "<group>"; };
 		F3E36F5A21BF6FD9003567DF /* CardList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CardList.swift; sourceTree = "<group>"; };
 		F3E36F5C21BF7074003567DF /* CardProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardProtocols.swift; sourceTree = "<group>"; };
@@ -354,7 +352,6 @@
 			isa = PBXGroup;
 			children = (
 				F3CEDA3021C08ECC00D678F7 /* Name.swift */,
-				F32B080C21D6CCBF00974894 /* Shuffle.swift */,
 				F32B07DA21D0673B00974894 /* Counters */,
 			);
 			name = Util;
@@ -570,7 +567,6 @@
 				F3E4AB9B1D10D4B1004AAB8B /* AppDelegate.swift in Sources */,
 				F32B081B21DEBF8C00974894 /* CardTransferBetweenCardLists.swift in Sources */,
 				F3E36F6621BF76D3003567DF /* TapControl.swift in Sources */,
-				F32B080D21D6CCBF00974894 /* Shuffle.swift in Sources */,
 				F325111B1D65460200F3E5A6 /* CardUtil.swift in Sources */,
 				F32B080321D5982D00974894 /* MagicCard.swift in Sources */,
 				F3E36F4D21BE427F003567DF /* LifeTotal.swift in Sources */,

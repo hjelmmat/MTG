@@ -7,7 +7,6 @@ protocol RestrictiveInteger
     var value: Int { get  set }
     
     mutating func changeTotal(by amount: Int)
-    
     mutating func setTotal(to amount: Int)
 }
 

@@ -46,22 +46,3 @@ extension Array where Element:Card
         return true
     }
 }
-
-// TODO: Fill out card comparision functionss
-//func ==(lhs: Spell, rhs: Spell) -> Bool
-//{
-//    if lhs.name == rhs.name
-//    {
-//        return true
-//    }
-//    return false
-//}
-//
-//func ==(lhs: Land, rhs: Land) -> Bool
-//{
-//    if lhs.name == rhs.name
-//    {
-//        return true
-//    }
-//    return false
-//}

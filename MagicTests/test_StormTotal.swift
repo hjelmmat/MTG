@@ -9,6 +9,5 @@ class test_StormTotal: XCTestCase
         test.changeTotal(by: 1)
         test.resetCounterToZero()
         assert(test.counter.value == 0)
-        
     }
 }
